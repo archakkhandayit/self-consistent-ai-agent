@@ -144,16 +144,6 @@ async function openAIResponse(prompt = "", responses) {
     return result.choices[0].message.content;
 }
 
-
-// console.log("GEMINI RESPONSE:")`
-// console.log( await geminiResponse(query))
-// console.log("\n\n")
-// console.log("GROQ RESPONSE:")
-// console.log(await groqResponse(query))
-// console.log("\n\n")
-// console.log("MISTRAL RESPONSE:")
-// console.log(await mistralResponse(query))
-
 const query = "Debate: AI eats jobs of developer or sometimes eats companies also."
 
 const results = await Promise.allSettled([
