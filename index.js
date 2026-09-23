@@ -144,7 +144,7 @@ async function openAIResponse(prompt = "", responses) {
     return result.choices[0].message.content;
 }
 
-const query = "Debate: AI eats jobs of developer or sometimes eats companies also."
+const query = "Why sky is blue?"
 
 const results = await Promise.allSettled([
     geminiResponse(query),
